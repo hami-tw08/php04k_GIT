@@ -45,7 +45,7 @@
 
 $("#send").on("click",function(){ 
     const url = "https://www.googleapis.com/books/v1/volumes?q=" + $("#key").val();
-    $.ajax({
+    $.ajax({ //ajax:ページ全体をリロードせずに、一部のデータだけを非同期でやり取りする
         url: url,
         dataType:"json"
     }).done(function(data){
@@ -75,7 +75,10 @@ for(let i=0; i<len; i++){
         `;
 }
 
-$("#list").empty().hide().append(`
+// #list（idがlistの要素）の中身を空にして非表示にする
+// 表のヘッダー行（書籍名・出版社・画像）を追加し、
+// その後ろに変数html（動的に作られた行データ）をつなげて追加する
+$("#list").empty().hide().append(` 
 <tr>
     <td style="width: 400px">書籍名</td>
     <td style="width: 200px">出版社</td>
