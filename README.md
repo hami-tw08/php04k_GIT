@@ -11,8 +11,8 @@ Book Search & Bookmarking
 https://hanami979.sakura.ne.jp/php02kadai_bookmarkAPI/login.php
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
-- ID: 要新規登録
-- PW: 要新規登録
+- ID: gs
+- PW: academy
 
 ## ⑤工夫した点・こだわった点
 - これまでコピペを繰り返しまくってましたが、今回はphp部分は手打ちして複写しました
